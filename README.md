@@ -1,8 +1,8 @@
-# Day - Task Tracker
+# DoneDay - Task Tracker
 A web application for organizing daily tasks and tracking progress.
 
 ## About Project 
-Day is a task tracker that helps users organize their daily activities, manage tasks, and keep track of completed work.
+DoneDay is a task tracker that helps users organize their daily activities, manage tasks, and keep track of completed work.
 
 ## Stage 0 -Task Card
 The first stage focuses on creating a task card with the following elements:
