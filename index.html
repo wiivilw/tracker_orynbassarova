@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DoneDay - Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <main class="container">
+        <header id="home">
+            <nav class="navbar">
+                <a href="#home" class="logo">DoneDay ♡</a>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+
+                <p class="subtitle">A little more organized</p>
+
+                <h1>Get your thing done!
+                    <span>Feel good about it.</span>
+                </h1>
+
+                <p class="hero-text">A simple place to plan your tasks and stay productive.</p>
+                <a href="#features" class="button">Explore features -> </a>
+            </div>
+
+            <div class="task-preview">
+                <p class="preview-label">YOUR DAILY PLAN</p>
+                <h2>Today's task</h2>
+                <p class="task-date">A fresh start, one step at a time</p>
+
+                <div class="progress-info">
+                    <span>Daily progress</span>
+                    <span>3 of 5</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+
+                <div class="task completed">
+                    <span class="task-check">✔</span>
+                    <span>Make a to-do list</span>
+                </div>
+
+                <div class="task completed">
+                    <span class="task-check">✔</span>
+                    <span>Drink a 1L of water.</span>
+                </div>
+
+                <div class="task completed">
+                    <span class="task-check">✔</span>
+                    <span>Take a 10-minute walk.</span>
+                </div>
+
+                <div class="task">
+                    <span class="task-circle"></span>
+                    <span>Buy a phone chapter</span>
+                </div>
+
+                <div class="task">
+                    <span class="task-circle"></span>
+                    <span>Read a book for 30 minutes</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <div class="section-heading">
+                <p class="subtitle">MADE FOR YOUR EVERYDAY</p>
+                <h2>Small steps, big progress.</h2>
+                <p>Everything you need to make your day feel a little easier.</p>
+            </div>
+            <div class="cards">
+                <article class="card sage">
+                    <span class="card-icon">☷</span>
+                    <h3>Daily tasks</h3>
+                    <p>Keep your to-do list simple and focus on what matters today.</p>
+                </article>
+                <article class="card yellow">
+                    <span class="card-icon">↗</span>
+                    <h3>Simple planning</h3>
+                    <p>Break big goals into small steps that feel easier to manage.</p>
+                </article>
+                <article class="card clay">
+                    <span class="card-icon">✦</span>
+                    <h3>Track your progress</h3>
+                    <p>See how much you accomplish each day and feel good about it.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-heading">
+                <p class="subtitle">HOW IT WORKS</p>
+                <h2>Your day, your pace.</h2>
+                <p> DoneDay helps you organize your tasks without making your day feel overwhelming.</p>
+            </div>
+            <div class="steps">
+                <article class="step">
+                    <span class="step-icon">01</span>
+                    <h3>Write it down</h3>
+                    <p>Write the tasks you want to complete today.</p>
+                </article>
+                <article class="step">
+                    <span class="step-icon">02</span>
+                    <h3>Take one step</h3>
+                    <p>Focus on the task instead of doing everything at once.</p>
+                </article>
+                <article class="step">
+                    <span class="step-icon">03</span>
+                    <h3>Enjoy the progress</h3>
+                    <p>Check off your tasks and appreciate what you achieved.</p>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contact-content">
+                <p class="subtitle">LET'S TALK</p>
+                <h2>Have a question?</h2>
+                <p>Send us a message. We'd love to hear from you.</p>
+            </div>
+            <form class="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
+                <button type="button" class="button">Send message</button>
+                <p class="form-note">It's a demo form. Sending is not enabled yet.</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <a href="#home" class="logo">DoneDay ♡</a>
+            <p>A calmer way to get things done.</p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 DoneDay. Made for better days.</p>
+        </div>
+    </footer>
 </body>
 </html>
