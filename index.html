@@ -21,10 +21,14 @@
                 </label>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#tasks">My Tasks</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button type="button" id="theme-toggle" class="theme-toggle">
+                    Dark Mode
+                </button>
             </nav>
         </header>
 
@@ -80,6 +84,38 @@
                     <span>Read a book for 30 minutes</span>
                 </div>
             </div>
+        </section>
+
+        <section class="task-manager" id="tasks">
+            <div class="section-heading">
+                <p class="subtitle">STAY ORGANIZED</p>
+                <h2>My Tasks</h2>
+                <p>Manage your daily tasks and stay productive.</p>
+            </div>
+
+            <div class="task-controls">
+                <input type="text" id="search-input" placeholder="Search tasks...">
+                <p id="task-error" class="task-error"></p>
+                <select id="category-filter">
+                    <option value="All">All categories</option>
+                    <option value="Study">Study</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                </select>
+            </div>
+
+            <form id="task-form" class="task-form">
+                <input type="text" id="task-input" placeholder="Enter a new task..." minlength="2" maxlength="80"
+                    required>
+                <select id="task-category">
+                    <option value="Study">Study</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Work">Work</option>
+                </select>
+
+                <button type="submit" class="button">Add Task</button>
+            </form>
+            <div class="task-list"></div>
         </section>
 
         <section class="features" id="features">
@@ -144,8 +180,9 @@
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 <label for="message">Your message</label>
                 <textarea id="message" name="message" rows="4" placeholder="Write your message..." required></textarea>
-                <button type="button" class="button">Send message</button>
-                <p class="form-note">It's a demo form. Sending is not enabled yet.</p>
+                <button type="submit" class="button">Send message</button>
+                <p class="form-note">Your message will be received soon!</p>
+                <p id="contact-success" class="contact-success"></p>
             </form>
         </section>
     </main>
@@ -160,5 +197,7 @@
             <p>© 2026 DoneDay. Made for better days.</p>
         </div>
     </footer>
+    <script type="module" src="js/main.js"></script>
 </body>
+
 </html>
