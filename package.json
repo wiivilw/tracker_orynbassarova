@@ -1,0 +1,27 @@
+{
+  "name": "tracker_orynbassarova",
+  "version": "1.0.0",
+  "description": "A web application for organizing daily tasks and tracking progress.",
+  "main": "index.js",
+ "scripts": {
+  "dev": "vite",
+  "build": "tsc --noEmit && vite build",
+  "preview": "vite preview"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiivilw/tracker_orynbassarova.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/wiivilw/tracker_orynbassarova/issues"
+  },
+  "homepage": "https://github.com/wiivilw/tracker_orynbassarova#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}
